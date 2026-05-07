@@ -24,17 +24,17 @@ const NavigationMenuComponent = () => {
         </NavigationMenuItem>
         <NavigationMenuItem>
           <Button variant={"ghost"} size={"lg"} className="font-normal h-11">
-            About Us
+            Features
           </Button>
         </NavigationMenuItem>
         <NavigationMenuItem>
           <Button variant={"ghost"} size={"lg"} className="font-normal h-11">
-            Product
+            Pricing
           </Button>
         </NavigationMenuItem>
         <NavigationMenuItem>
           <Button variant={"ghost"} size={"lg"} className="font-normal h-11">
-            Blogs
+            Blog
           </Button>
         </NavigationMenuItem>
       </NavigationMenuList>
@@ -72,11 +72,13 @@ const Navbar = (props: Props) => {
         )}
       >
         {isScrolled ? (
-          <div className="text-lg font-semibold text-foreground mx-2">Cr</div>
+          <div className="text-lg font-semibold text-foreground mx-2">
+            Oatmeal
+          </div>
         ) : (
           <img
             src="/logo.png"
-            alt="Logo"
+            alt="Oatmeal – AI Macro Tracker"
             className="h-16 w-auto mix-blend-multiply saturate-0 contrast-500"
           />
         )}
@@ -88,14 +90,14 @@ const Navbar = (props: Props) => {
           size={"lg"}
           className="font-normal text-sm h-10 text-muted-foreground"
         >
-          For Influencers
+          Sign In
         </Button>
         <Button
           variant={"default"}
           size={"lg"}
           className="font-light text-sm h-10"
         >
-          Schedule a Demo
+          Download Free
         </Button>
       </div>
     </nav>

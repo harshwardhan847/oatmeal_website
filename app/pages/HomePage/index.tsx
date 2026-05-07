@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 import Testimonials from "./components/Testimonials";
 import Transform from "./components/Transform";
+import AppShowcase from "./components/AppShowcase";
 import BlurEffect from "react-progressive-blur";
 
 type Props = {};
@@ -13,7 +14,7 @@ type Props = {};
 const Home = (props: Props) => {
   return (
     <>
-      <div className="fixed z-50 bg-red-400 top-0 left-0 w-screen h-auto">
+      <div className="fixed z-50 top-0 left-0 w-screen h-auto">
         <BlurEffect position="top" intensity={100} className="h-20" />
       </div>
       <header className="w-full h-full min-h-screen bg-background">
@@ -22,6 +23,7 @@ const Home = (props: Props) => {
       </header>
       <Brands />
       <Transform />
+      <AppShowcase />
       <Features />
       <Testimonials />
       <EmailCard />

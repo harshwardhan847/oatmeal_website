@@ -7,6 +7,7 @@ import {
 } from "motion/react";
 import React from "react";
 import { Button } from "~/components/ui/button";
+import { VIDEO_ALT_1 } from "~/lib/assets";
 
 type Props = {};
 
@@ -58,22 +59,22 @@ const Transform = (props: Props) => {
           AI
         </span>
         <span className="text-primary-foreground/70 font-normal tracking-wide ">
-          Influencer Marketing Platform
+          Nutrition Companion
         </span>
       </h4>
       <h2 className="text-5xl font-light leading-none tracking-tighter text-primary-foreground text-center">
-        Understand your audience
-        <br /> through voices they trust.
+        Understand your nutrition
+        <br /> through data that makes sense.
       </h2>
       <p className="max-w-md -m-4 text-muted-foreground text-center text-pretty">
-        We prioritize authentic influencer relationships
-        <br /> that create lasting impact for your brand.
+        Oatmeal turns everyday meal decisions into measurable
+        <br /> progress toward your goals.
       </p>
       <Button
         className="bg-background text-foreground cursor-pointer text-sm font-normal hover:bg-white"
         size={"lg"}
       >
-        Request a call back
+        Download the app
       </Button>
 
       <div className="w-full relative">
@@ -84,10 +85,11 @@ const Transform = (props: Props) => {
         >
           <span className="bg-green-400 rounded-sm shadow w-4 aspect-square mb-1" />
           <h6 className="font-normal text-xs text-foreground">
-            Find & Track Creators
+            Log Meals Your Way
           </h6>
           <p className="text-xs text-muted-foreground">
-            Discover 4mn+ creators filtered by niche, reach and engagement.
+            Text, voice, or a photo — Oatmeal parses your meal and logs macros
+            instantly.
           </p>
         </motion.div>
         <motion.div
@@ -97,10 +99,10 @@ const Transform = (props: Props) => {
         >
           <span className="bg-orange-400 rounded-sm shadow w-4 aspect-square mb-1" />
           <h6 className="font-normal text-xs text-foreground">
-            Intelligent Matchmaking
+            Real-Time Macro Tracking
           </h6>
           <p className="text-xs text-muted-foreground">
-            AI-powered recommendations to connect brands with ideal creators.
+            Calories, protein, carbs, fat, and fiber — updated live as you log.
           </p>
         </motion.div>
         <motion.div
@@ -110,29 +112,27 @@ const Transform = (props: Props) => {
         >
           <span className="bg-pink-400 rounded-sm shadow w-4 aspect-square mb-1" />
           <h6 className="font-normal text-xs text-foreground">
-            Live Performance Tracking
+            Weekly Insights
           </h6>
           <p className="text-xs text-muted-foreground">
-            Monitor views, engagement and ROI in real-time across campaigns.
+            Averages, trends, consistency scores, and coaching to keep you on
+            track.
           </p>
         </motion.div>
         <motion.div className="aspect-video mx-auto max-w-6xl w-full h-full overflow-hidden mt-8 shadow rounded-lg relative backdrop-blur-lg bg-white/20">
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/ozwfKTi461k?si=MGfoGHfWzBYdxScR"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerPolicy="strict-origin-when-cross-origin"
-            allowFullScreen
+          <video
+            src={VIDEO_ALT_1}
+            autoPlay
+            muted
+            loop
+            playsInline
             className="w-full h-full object-cover rounded-lg"
-          ></iframe>
+          />
         </motion.div>
       </div>
       <div className="mt-20">
         <h3 className="text-2xl font-normal text-muted-foreground text-center mb-8">
-          Never miss a campaign opportunity
+          Every meal is a data point.
         </h3>
 
         <div className="w-screen overflow-clip mx-auto relative py-4">
@@ -144,30 +144,34 @@ const Transform = (props: Props) => {
             transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
           >
             {[
-              "Influencer Discovery",
-              "Campaign Analytics",
-              "Creator Outreach",
-              "ROI Tracking",
-              "Audience Insights",
-              "Brand Collaboration",
-              "Influencer Discovery",
-              "Campaign Analytics",
-              "Creator Outreach",
-              "ROI Tracking",
-              "Audience Insights",
-              "Brand Collaboration",
-              "Influencer Discovery",
-              "Campaign Analytics",
-              "Creator Outreach",
-              "ROI Tracking",
-              "Audience Insights",
-              "Brand Collaboration",
-              "Influencer Discovery",
-              "Campaign Analytics",
-              "Creator Outreach",
-              "ROI Tracking",
-              "Audience Insights",
-              "Brand Collaboration",
+              "Meal Logging",
+              "Macro Tracking",
+              "Calorie Goals",
+              "AI Insights",
+              "Photo Logging",
+              "Voice Input",
+              "Meal History",
+              "Meal Logging",
+              "Macro Tracking",
+              "Calorie Goals",
+              "AI Insights",
+              "Photo Logging",
+              "Voice Input",
+              "Meal History",
+              "Meal Logging",
+              "Macro Tracking",
+              "Calorie Goals",
+              "AI Insights",
+              "Photo Logging",
+              "Voice Input",
+              "Meal History",
+              "Meal Logging",
+              "Macro Tracking",
+              "Calorie Goals",
+              "AI Insights",
+              "Photo Logging",
+              "Voice Input",
+              "Meal History",
             ].map((label, i) => (
               <div
                 key={i}
@@ -189,30 +193,34 @@ const Transform = (props: Props) => {
             }}
           >
             {[
-              "Micro-Influencers",
-              "Nano Creators",
-              "Content Calendar",
-              "Performance Reports",
-              "Creator Briefs",
-              "Campaign Goals",
-              "Micro-Influencers",
-              "Nano Creators",
-              "Content Calendar",
-              "Performance Reports",
-              "Creator Briefs",
-              "Campaign Goals",
-              "Micro-Influencers",
-              "Nano Creators",
-              "Content Calendar",
-              "Performance Reports",
-              "Creator Briefs",
-              "Campaign Goals",
-              "Micro-Influencers",
-              "Nano Creators",
-              "Content Calendar",
-              "Performance Reports",
-              "Creator Briefs",
-              "Campaign Goals",
+              "Protein Goals",
+              "Calorie Deficit",
+              "Streak Counter",
+              "Weekly Reports",
+              "Personalized Goals",
+              "Pro Coaching",
+              "Fiber Tracking",
+              "Protein Goals",
+              "Calorie Deficit",
+              "Streak Counter",
+              "Weekly Reports",
+              "Personalized Goals",
+              "Pro Coaching",
+              "Fiber Tracking",
+              "Protein Goals",
+              "Calorie Deficit",
+              "Streak Counter",
+              "Weekly Reports",
+              "Personalized Goals",
+              "Pro Coaching",
+              "Fiber Tracking",
+              "Protein Goals",
+              "Calorie Deficit",
+              "Streak Counter",
+              "Weekly Reports",
+              "Personalized Goals",
+              "Pro Coaching",
+              "Fiber Tracking",
             ].map((label, i) => (
               <div
                 key={i}
@@ -229,30 +237,34 @@ const Transform = (props: Props) => {
             transition={{ duration: 17, repeat: Infinity, ease: "linear" }}
           >
             {[
-              "Engagement Rate",
-              "Reach & Impressions",
-              "Brand Awareness",
-              "Sponsored Posts",
-              "Story Views",
-              "Conversion Rate",
-              "Engagement Rate",
-              "Reach & Impressions",
-              "Brand Awareness",
-              "Sponsored Posts",
-              "Story Views",
-              "Conversion Rate",
-              "Engagement Rate",
-              "Reach & Impressions",
-              "Brand Awareness",
-              "Sponsored Posts",
-              "Story Views",
-              "Conversion Rate",
-              "Engagement Rate",
-              "Reach & Impressions",
-              "Brand Awareness",
-              "Sponsored Posts",
-              "Story Views",
-              "Conversion Rate",
+              "Weight Loss",
+              "Muscle Gain",
+              "Maintenance Mode",
+              "Consistency Score",
+              "Achievements",
+              "Sticker Rewards",
+              "Nutrition Trends",
+              "Weight Loss",
+              "Muscle Gain",
+              "Maintenance Mode",
+              "Consistency Score",
+              "Achievements",
+              "Sticker Rewards",
+              "Nutrition Trends",
+              "Weight Loss",
+              "Muscle Gain",
+              "Maintenance Mode",
+              "Consistency Score",
+              "Achievements",
+              "Sticker Rewards",
+              "Nutrition Trends",
+              "Weight Loss",
+              "Muscle Gain",
+              "Maintenance Mode",
+              "Consistency Score",
+              "Achievements",
+              "Sticker Rewards",
+              "Nutrition Trends",
             ].map((label, i) => (
               <div
                 key={i}
@@ -267,23 +279,22 @@ const Transform = (props: Props) => {
       </div>
       <div className="mx-auto w-xl mt-24 mb-24 text-primary-foreground">
         <p className="text-4xl text-start font-normal tracking-tight font-sans border-b border-white/20 pb-6">
-          "Cre8r's platform made influencer outreach effortless. We scaled from
-          5 to 50 creators in a single month — results we never thought
-          possible."
+          "I used to spend 20 minutes logging a single meal. With Oatmeal I just
+          describe what I ate and it's done in 10 seconds — macros and all."
         </p>
         <div className="flex items-center justify-between mt-4">
           <div className="flex items-center justify-center gap-2">
             <div className="aspect-square h-12 bg-background rounded-xl"></div>
             <div className="flex flex-col items-start justify-center">
               <p className="text-sm text-primary-foreground font-semibold">
-                Ananya Singh
+                Priya Mehta
               </p>
               <p className="text-sm text-muted-foreground">
-                Marketing Director, D2C Brand
+                Fitness enthusiast, Mumbai
               </p>
             </div>
           </div>
-          <div className="font-bold text-xl">Cre8r.ai</div>
+          <div className="font-bold text-xl">Oatmeal</div>
         </div>
       </div>
     </div>

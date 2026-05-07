@@ -4,13 +4,13 @@ type Props = {};
 
 const statItems = [
   {
-    stat: "4Mn+",
-    label: "Discoverable profiles",
+    stat: "50K+",
+    label: "Meals logged daily",
     border: "border-l-violet-400",
   },
-  { stat: "500Mn+", label: "Views generated", border: "border-l-emerald-400" },
-  { stat: "6000+", label: "Content published", border: "border-l-amber-400" },
-  { stat: "200+", label: "Campaigns delivered", border: "border-l-rose-400" },
+  { stat: "2Mn+", label: "Macros tracked", border: "border-l-emerald-400" },
+  { stat: "98%", label: "Logging accuracy", border: "border-l-amber-400" },
+  { stat: "10K+", label: "Active streaks", border: "border-l-rose-400" },
 ];
 
 const Brands = (props: Props) => {
@@ -29,12 +29,12 @@ const Brands = (props: Props) => {
               Traction
             </p>
             <h2 className="text-4xl font-light tracking-tight leading-tight">
-              Automate Influencer Marketing
-              <br /> to Drive ROI
+              Smarter nutrition tracking
+              <br /> without the spreadsheet fatigue
             </h2>
             <p className="text-muted-foreground text-sm leading-relaxed max-w-sm">
-              Thousands of brands trust Cre8r to discover creators, run
-              campaigns and measure what matters most.
+              Thousands of people trust Oatmeal to log meals, hit their macros,
+              and build lasting consistency — one day at a time.
             </p>
           </motion.div>
 

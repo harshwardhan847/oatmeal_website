@@ -1,38 +1,44 @@
 import React from "react";
 import { cn } from "~/lib/utils";
+import {
+  SCREENSHOT_HOME,
+  SCREENSHOT_WEEKLY_REPORT,
+  SCREENSHOT_PROFILE,
+  SCREENSHOT_STREAK,
+} from "~/lib/assets";
 
 type Props = {};
 
 const featuresList = [
   {
-    title: "Find & Track 4mn+ Creators",
-    image: "/feature1.png",
+    title: "Log Meals Your Way",
+    image: SCREENSHOT_HOME,
     description:
-      "Filter by engagement metrics, niche, audience demographics & more.",
+      "Use text, voice, or a photo. Oatmeal estimates nutrition automatically and saves it to your daily log.",
     accent: "bg-violet-400",
     num: "01",
   },
   {
-    title: "Advanced Creator Briefing System",
-    image: "/feature2.png",
+    title: "Real-Time Macro Tracking",
+    image: SCREENSHOT_WEEKLY_REPORT,
     description:
-      "The intuitive briefing system helps you set clear goals and share detailed guidelines.",
+      "See calories, protein, carbs, fat, and fiber at a glance — updated the moment you log.",
     accent: "bg-emerald-400",
     num: "02",
   },
   {
-    title: "Intelligent Matchmaking",
-    image: "/feature3.png",
+    title: "Personalized Insights",
+    image: SCREENSHOT_PROFILE,
     description:
-      "Make data-driven decisions with every click, every view, every comment.",
+      "Weekly averages, macro balance, consistency scores, and progress patterns — all in one dashboard.",
     accent: "bg-amber-400",
     num: "03",
   },
   {
-    title: "Live Performance Tracking",
-    image: "/feature4.png",
+    title: "Streaks & Achievements",
+    image: SCREENSHOT_STREAK,
     description:
-      "Monitor views, engagement and ROI in real-time across campaigns.",
+      "Build daily logging streaks, unlock stickers, and share your progress with friends.",
     accent: "bg-rose-400",
     num: "04",
   },
@@ -45,20 +51,22 @@ const Features = (props: Props) => {
 
   return (
     <div className="w-full my-24 flex flex-col items-center gap-4 justify-center">
-      <h2 className="text-4xl font-normal text-center">How it works?</h2>
+      <h2 className="text-4xl font-normal text-center">
+        What you can do with Oatmeal
+      </h2>
       <p className="text-center text-muted-foreground text-sm -m-2">
-        Find your ideal influencers in seconds —
-        <br /> no matter the niche, reach or region.
+        Fast logging, real-time macros, and insights
+        <br /> that actually help you stay consistent.
       </p>
-      <div className="h-screen pt-24 w-full">
-        <div className="w-full grid grid-cols-1 relative container md:max-w-6xl mx-auto perspective-distant">
+      <div className="h-screen md:h-[120vh] pt-24 w-full">
+        <div className="w-full grid grid-cols-1 items-center justify-center relative container md:max-w-6xl mx-auto perspective-distant">
           {featuresList.map((val, featureIdx) => {
             const pos = order.indexOf(featureIdx);
             const isHovered = hovered === featureIdx;
             return (
               <div
                 key={val.title}
-                className="flex flex-col absolute shadow-lg cursor-pointer top-0 left-0 w-full bg-white rounded-lg items-start justify-start gap-0"
+                className="flex flex-col absolute aspect-9/16 md:max-w-sm shadow-lg cursor-pointer top-0 left-1/2 -translate-x-1/2 w-full bg-white rounded-lg items-start justify-start gap-0"
                 style={{
                   transformStyle: "preserve-3d",
                   transform: `translateZ(${-pos * 200}px) scale(${1 - pos * 0.002}) translateY(${-pos * 40 - (isHovered ? 24 : 0)}px)`,
@@ -96,13 +104,13 @@ const Features = (props: Props) => {
                   alt={val.title}
                   width={500}
                   height={500}
-                  className="w-full h-auto bg-primary aspect-video object-cover rounded-b-lg"
+                  className="w-full h-auto bg-primary object-cover object-top rounded-b-lg"
                 />
-                {(pos === 0 || isHovered) && (
+                {/* {(pos === 0 || isHovered) && (
                   <p className="text-xs text-muted-foreground px-6 pb-4 pt-1">
                     {val.description}
                   </p>
-                )}
+                )} */}
               </div>
             );
           })}
@@ -111,22 +119,22 @@ const Features = (props: Props) => {
 
       <div className="mx-auto w-xl mt-24 text-foreground">
         <p className="text-4xl text-start font-normal tracking-tight font-sans border-b border-border/20 pb-6">
-          "Cre8r's platform made it incredibly easy to find the right creators
-          for our brand. Our campaign reach doubled within the first week."
+          "Oatmeal has completely changed how I think about food. The AI logging
+          is unreal — I just speak and it's done."
         </p>
         <div className="flex items-center justify-between mt-4">
           <div className="flex items-center justify-center gap-2">
             <div className="aspect-square h-12 bg-primary rounded-xl"></div>
             <div className="flex flex-col items-start justify-center">
               <p className="text-sm text-foreground font-semibold">
-                Rahul Mehta
+                Arjun Kapoor
               </p>
               <p className="text-sm text-muted-foreground">
-                Growth Lead, Consumer Brand
+                Fitness Coach, Delhi
               </p>
             </div>
           </div>
-          <div className="font-bold text-xl">Cre8r.ai</div>
+          <div className="font-bold text-xl">Oatmeal</div>
         </div>
       </div>
     </div>

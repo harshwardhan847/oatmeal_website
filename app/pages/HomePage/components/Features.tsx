@@ -51,12 +51,12 @@ const Features = (props: Props) => {
 
   return (
     <div className="w-full my-24 flex flex-col items-center gap-4 justify-center">
-      <h2 className="text-4xl font-normal text-center">
+      <h2 className="text-3xl sm:text-4xl font-normal text-center px-4">
         What you can do with Oatmeal
       </h2>
-      <p className="text-center text-muted-foreground text-sm -m-2">
-        Fast logging, real-time macros, and insights
-        <br /> that actually help you stay consistent.
+      <p className="text-center text-muted-foreground text-sm -m-2 px-4">
+        Fast logging, real-time macros, and insights that actually help you stay
+        consistent.
       </p>
       <div className="h-screen md:h-[120vh] pt-24 w-full">
         <div className="w-full grid grid-cols-1 items-center justify-center relative container md:max-w-6xl mx-auto perspective-distant">
@@ -117,8 +117,8 @@ const Features = (props: Props) => {
         </div>
       </div>
 
-      <div className="mx-auto w-xl mt-24 text-foreground">
-        <p className="text-4xl text-start font-normal tracking-tight font-sans border-b border-border/20 pb-6">
+      <div className="mx-auto max-w-xl w-full px-4 mt-24 text-foreground">
+        <p className="text-2xl sm:text-3xl md:text-4xl text-start font-normal tracking-tight font-sans border-b border-border/20 pb-6">
           "Oatmeal has completely changed how I think about food. The AI logging
           is unreal — I just speak and it's done."
         </p>

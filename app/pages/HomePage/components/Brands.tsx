@@ -15,7 +15,7 @@ const statItems = [
 
 const Brands = (props: Props) => {
   return (
-    <section className="py-24">
+    <section className="py-12 md:py-24">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
           <motion.div
@@ -28,9 +28,8 @@ const Brands = (props: Props) => {
             <p className="text-xs uppercase tracking-widest text-muted-foreground font-medium">
               Traction
             </p>
-            <h2 className="text-4xl font-light tracking-tight leading-tight">
-              Smarter nutrition tracking
-              <br /> without the spreadsheet fatigue
+            <h2 className="text-3xl sm:text-4xl font-light tracking-tight leading-tight">
+              Smarter nutrition tracking without the spreadsheet fatigue
             </h2>
             <p className="text-muted-foreground text-sm leading-relaxed max-w-sm">
               Thousands of people trust Oatmeal to log meals, hit their macros,

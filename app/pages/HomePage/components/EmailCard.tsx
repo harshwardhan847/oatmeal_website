@@ -46,7 +46,7 @@ const EmailCard = (props: Props) => {
             <p className="text-xs uppercase tracking-widest text-white/40 font-medium">
               Download free
             </p>
-            <h2 className="text-5xl font-black tracking-tight text-white leading-tight">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight text-white leading-tight">
               Build{" "}
               <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 via-purple-300 to-blue-400">
                 consistent

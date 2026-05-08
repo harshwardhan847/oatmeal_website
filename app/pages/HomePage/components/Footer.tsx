@@ -65,7 +65,7 @@ const Footer = () => {
               View all articles
             </Button>
           </div>
-          <div className="grid grid-cols-4 items-start justify-center gap-4 mt-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 items-start justify-center gap-4 mt-4">
             {articles?.map((article) => (
               <div key={article.id}>
                 <div className="aspect-video mb-2 w-full text-center flex items-center justify-center text-muted-foreground rounded-md shadow bg-neutral-900" />
@@ -78,8 +78,8 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="py-40 pt-20 flex flex-col bg-primary items-center justify-center gap-4">
-        <h2 className="text-5xl uppercase text-center text-primary-foreground font-bold">
+      <div className="py-20 md:py-40 pt-12 md:pt-20 flex flex-col bg-primary items-center justify-center gap-4 px-4">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl uppercase text-center text-primary-foreground font-bold">
           AI-powered nutrition tracking
           <br /> for{" "}
           <span className="text-transparent bg-clip-text bg-linear-to-br from-pink-500 via-background to-blue-500">

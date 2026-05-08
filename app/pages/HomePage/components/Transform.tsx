@@ -62,13 +62,13 @@ const Transform = (props: Props) => {
           Nutrition Companion
         </span>
       </h4>
-      <h2 className="text-5xl font-light leading-none tracking-tighter text-primary-foreground text-center">
+      <h2 className="text-3xl sm:text-4xl md:text-5xl font-light leading-none tracking-tighter text-primary-foreground text-center px-4">
         Understand your nutrition
-        <br /> through data that makes sense.
+        <br className="hidden sm:block" /> through data that makes sense.
       </h2>
-      <p className="max-w-md -m-4 text-muted-foreground text-center text-pretty">
-        Oatmeal turns everyday meal decisions into measurable
-        <br /> progress toward your goals.
+      <p className="max-w-md -m-4 text-muted-foreground text-center text-pretty px-4">
+        Oatmeal turns everyday meal decisions into measurable progress toward
+        your goals.
       </p>
       <Button
         className="bg-background text-foreground cursor-pointer text-sm font-normal hover:bg-white"
@@ -81,7 +81,7 @@ const Transform = (props: Props) => {
         <motion.div
           style={{ rotate: rotateRight, y }}
           whileHover={{ scale: 1.04 }}
-          className="absolute rounded-md origin-top-right bg-white/80 backdrop-blur-md shadow-lg z-10 w-xs flex flex-col items-start justify-center gap-1 p-4 top-1/4 right-12 border-t-2 border-t-green-400"
+          className="hidden md:flex absolute rounded-md origin-top-right bg-white/80 backdrop-blur-md shadow-lg z-10 w-xs flex-col items-start justify-center gap-1 p-4 top-1/4 right-12 border-t-2 border-t-green-400"
         >
           <span className="bg-green-400 rounded-sm shadow w-4 aspect-square mb-1" />
           <h6 className="font-normal text-xs text-foreground">
@@ -95,7 +95,7 @@ const Transform = (props: Props) => {
         <motion.div
           style={{ y }}
           whileHover={{ scale: 1.04 }}
-          className="absolute rounded-md origin-top-right bg-white/80 backdrop-blur-md shadow-lg z-10 w-xs flex flex-col items-start justify-center gap-1 p-4 top-full right-1/2 translate-x-1/2 -translate-y-1/2 border-t-2 border-t-orange-400"
+          className="hidden md:flex absolute rounded-md origin-top-right bg-white/80 backdrop-blur-md shadow-lg z-10 w-xs flex-col items-start justify-center gap-1 p-4 top-full right-1/2 translate-x-1/2 -translate-y-1/2 border-t-2 border-t-orange-400"
         >
           <span className="bg-orange-400 rounded-sm shadow w-4 aspect-square mb-1" />
           <h6 className="font-normal text-xs text-foreground">
@@ -108,7 +108,7 @@ const Transform = (props: Props) => {
         <motion.div
           style={{ rotate, y }}
           whileHover={{ scale: 1.04 }}
-          className="absolute rounded-md origin-top-left bg-white/80 backdrop-blur-md shadow-lg z-10 w-xs flex flex-col items-start justify-center gap-1 p-4 top-1/6 left-12 border-t-2 border-t-pink-400"
+          className="hidden md:flex absolute rounded-md origin-top-left bg-white/80 backdrop-blur-md shadow-lg z-10 w-xs flex-col items-start justify-center gap-1 p-4 top-1/6 left-12 border-t-2 border-t-pink-400"
         >
           <span className="bg-pink-400 rounded-sm shadow w-4 aspect-square mb-1" />
           <h6 className="font-normal text-xs text-foreground">
@@ -119,13 +119,14 @@ const Transform = (props: Props) => {
             track.
           </p>
         </motion.div>
-        <motion.div className="aspect-video mx-auto max-w-6xl w-full h-full overflow-hidden mt-8 shadow rounded-lg relative backdrop-blur-lg bg-white/20">
+        <motion.div className="aspect-video mx-auto max-w-6xl w-full h-full overflow-hidden mt-8 shadow rounded-lg relative backdrop-blur-lg bg-white/20 px-4 md:px-0">
           <video
             src={VIDEO_ALT_1}
             autoPlay
             muted
             loop
             playsInline
+            preload="none"
             className="w-full h-full object-cover rounded-lg"
           />
         </motion.div>
@@ -277,8 +278,8 @@ const Transform = (props: Props) => {
           </motion.div>
         </div>
       </div>
-      <div className="mx-auto w-xl mt-24 mb-24 text-primary-foreground">
-        <p className="text-4xl text-start font-normal tracking-tight font-sans border-b border-white/20 pb-6">
+      <div className="mx-auto max-w-xl w-full px-4 mt-24 mb-24 text-primary-foreground">
+        <p className="text-2xl sm:text-3xl md:text-4xl text-start font-normal tracking-tight font-sans border-b border-white/20 pb-6">
           "I used to spend 20 minutes logging a single meal. With Oatmeal I just
           describe what I ate and it's done in 10 seconds — macros and all."
         </p>

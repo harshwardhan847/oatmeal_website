@@ -27,35 +27,36 @@ const GooglePlayIcon = () => (
 
 const Header = (props: Props) => {
   return (
-    <header className="w-full mx-auto mt-24 flex flex-col items-center justify-start md:pt-12 relative md:min-h-[80vh]">
+    <header className="w-full mx-auto mt-20 md:mt-24 flex flex-col items-center justify-start md:pt-12 relative md:min-h-[80vh]">
       <div className="w-full absolute -top-20 left-0 scale-100 h-full z-0">
         <img
           src={HEADER_BG}
           alt="Header Background"
+          loading="lazy"
           className="w-full h-full object-contain opacity-100"
         />
       </div>
       <div className="flex flex-col gap-4 z-10 items-center justify-center">
         {/* badge */}
-        <button className="bg-white/80 scale-85 cursor-pointer hover:scale-88 duration-500 transition rounded-xl shadow-sm px-2 py-2 flex items-center justify-center gap-1 w-min mb-4">
+        <button className="bg-white/80 scale-90 sm:scale-85 cursor-pointer hover:scale-95 sm:hover:scale-88 duration-500 transition rounded-xl shadow-sm px-2 py-2 flex items-center justify-center gap-1 max-w-full mb-4">
           <p className="bg-primary text-primary-foreground rounded-sm px-2 flex w-min h-6 text-xs font-medium items-center mr-1 justify-center">
             New
           </p>
-          <h4 className="text-sm font-light whitespace-nowrap">
+          <h4 className="text-xs sm:text-sm font-light whitespace-nowrap">
             AI-powered meal logging — text, voice & photo
           </h4>
           <ArrowRight className="size-4 text-muted-foreground" />
         </button>
-        <h1 className="text-6xl font-medium text-center tracking-tighter leading-16">
-          Log meals, track macros, <br />
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-medium text-center tracking-tighter leading-tight md:leading-16 px-4">
+          Log meals, track macros, <br className="hidden sm:block" />
           stay consistent.
         </h1>
-        <h2 className="text-muted-foreground text-2xl max-w-lg font-light text-center">
-          Describe your meal, snap a photo, or speak it —<br /> Oatmeal handles
-          the rest.
+        <h2 className="text-muted-foreground text-lg sm:text-xl md:text-2xl max-w-lg font-light text-center px-4">
+          Describe your meal, snap a photo, or speak it —{" "}
+          <br className="hidden sm:block" /> Oatmeal handles the rest.
         </h2>
         {/* Download CTAs */}
-        <div className="flex items-center gap-4 mt-4">
+        <div className="flex flex-wrap items-center justify-center gap-3 mt-4 px-4">
           <a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer">
             <Button
               size="lg"

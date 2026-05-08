@@ -24,7 +24,7 @@ const VideoExample = (props: Props) => {
         scale: scale,
       }}
       ref={ref}
-      className="aspect-video max-w-7xl w-full h-full p-4 mt-24 rounded-lg overflow-hidden relative backdrop-blur-lg bg-white/20"
+      className="aspect-video max-w-7xl w-full h-full p-2 sm:p-4 mt-12 sm:mt-16 md:mt-24 rounded-lg overflow-hidden relative backdrop-blur-lg bg-white/20"
     >
       <video
         src={VIDEO_DEMO}

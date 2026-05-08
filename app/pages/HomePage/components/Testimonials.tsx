@@ -76,13 +76,13 @@ const TestimonialCard = ({
 
 const Testimonials = () => {
   return (
-    <section className="py-24 bg-neutral-50/60">
+    <section className="py-12 md:py-24 bg-neutral-50/60">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <p className="text-xs uppercase tracking-widest text-muted-foreground font-medium mb-3">
             Social proof
           </p>
-          <h2 className="text-4xl font-light tracking-tight">
+          <h2 className="text-3xl sm:text-4xl font-light tracking-tight">
             Loved by people who actually track
           </h2>
         </div>

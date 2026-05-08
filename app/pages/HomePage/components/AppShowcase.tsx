@@ -18,9 +18,9 @@ const slides = [
 
 const AppShowcase = () => {
   return (
-    <section className="w-full py-24 bg-background">
+    <section className="w-full py-12 md:py-24 bg-background">
       <div className="container mx-auto px-4 flex flex-col items-center gap-4 mb-14">
-        <h2 className="text-4xl font-normal text-center tracking-tight">
+        <h2 className="text-3xl sm:text-4xl font-normal text-center tracking-tight">
           Everything you need, in one app
         </h2>
         <p className="text-center text-muted-foreground text-sm">
@@ -41,6 +41,7 @@ const AppShowcase = () => {
             <img
               src={slide.image}
               alt={slide.alt}
+              loading="lazy"
               className="w-full h-full object-cover"
             />
           </motion.div>

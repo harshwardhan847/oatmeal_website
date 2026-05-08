@@ -27,7 +27,7 @@ const GooglePlayIcon = () => (
 
 const Header = (props: Props) => {
   return (
-    <header className="w-full mx-auto mt-20 md:mt-24 flex flex-col items-center justify-start md:pt-12 relative md:min-h-[80vh]">
+    <header className="w-full mx-auto mt-26 md:mt-24 flex flex-col items-center justify-start md:pt-12 relative min-h-[80vh] md:min-h-[80vh]">
       <div className="w-full absolute -top-20 left-0 scale-100 h-full z-0">
         <img
           src={HEADER_BG}

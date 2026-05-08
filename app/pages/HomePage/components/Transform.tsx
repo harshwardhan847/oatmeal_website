@@ -137,8 +137,8 @@ const Transform = (props: Props) => {
         </h3>
 
         <div className="w-screen overflow-clip mx-auto relative py-4">
-          <div className="bg-linear-to-r from-primary to-transparent w-sm h-full absolute top-0 left-0 z-10" />
-          <div className="bg-linear-to-l from-primary to-transparent w-sm h-full absolute top-0 right-0 z-10" />
+          <div className="bg-linear-to-r from-primary to-transparent w-14 md:w-sm h-full absolute top-0 left-0 z-10" />
+          <div className="bg-linear-to-l from-primary to-transparent w-14 md:w-sm h-full absolute top-0 right-0 z-10" />
           <motion.div
             className="flex gap-4 py-2 px-4 flex-nowrap items-start justify-start"
             animate={{ x: [0, -1200] }}

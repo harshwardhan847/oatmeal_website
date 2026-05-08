@@ -17,7 +17,7 @@ const Home = (props: Props) => {
       <div className="fixed z-50 top-0 left-0 w-screen h-auto">
         <BlurEffect position="top" intensity={100} className="h-20" />
       </div>
-      <header className="w-full h-full min-h-screen bg-background">
+      <header className="w-full h-full md:min-h-screen bg-background">
         <Navbar />
         <Header />
       </header>

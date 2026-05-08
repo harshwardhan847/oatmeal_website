@@ -44,7 +44,7 @@ const Navbar = (props: Props) => {
     <>
       <nav
         className={cn(
-          "flex items-center justify-between px-4 py-2 pt-2 z-50 transition-all fixed top-4 w-full left-1/2 -translate-x-1/2 ease-in duration-200 md:px-8 md:max-w-350 md:mx-auto",
+          "flex items-center justify-between px-4 py-2 pt-0 md:pt-2 z-50 transition-all fixed top-4 w-full left-1/2 -translate-x-1/2 ease-in duration-200 md:px-8 md:max-w-350 md:mx-auto",
           isScrolled
             ? "bg-background/95 backdrop-blur-sm py-1 md:px-2 z-50 top-4 -translate-x-1/2 w-auto md:w-min rounded-xl shadow"
             : "bg-transparent",
@@ -64,7 +64,7 @@ const Navbar = (props: Props) => {
             <img
               src="/logo.png"
               alt="Oatmeal – AI Macro Tracker"
-              className="h-16 w-auto mix-blend-multiply saturate-0 contrast-500"
+              className=" h-10 md:h-16 w-auto mix-blend-multiply saturate-0 contrast-500"
             />
           )}
           <div className="hidden md:flex">

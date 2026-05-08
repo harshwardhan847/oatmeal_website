@@ -79,7 +79,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="py-20 md:py-40 pt-12 md:pt-20 flex flex-col bg-primary items-center justify-center gap-4 px-4">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl uppercase text-center text-primary-foreground font-bold">
+        <h2 className="text-2xl sm:text-4xl md:text-5xl uppercase text-center text-primary-foreground font-bold">
           AI-powered nutrition tracking
           <br /> for{" "}
           <span className="text-transparent bg-clip-text bg-linear-to-br from-pink-500 via-background to-blue-500">

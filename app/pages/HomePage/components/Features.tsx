@@ -54,12 +54,12 @@ const Features = (props: Props) => {
       <h2 className="text-3xl sm:text-4xl font-normal text-center px-4">
         What you can do with Oatmeal
       </h2>
-      <p className="text-center text-muted-foreground text-sm -m-2 px-4">
+      <p className="text-center max-w-sm md:max-w-max text-muted-foreground text-sm -m-2 px-4">
         Fast logging, real-time macros, and insights that actually help you stay
         consistent.
       </p>
       <div className="h-screen md:h-[120vh] pt-24 w-full">
-        <div className="w-full grid grid-cols-1 items-center justify-center relative container md:max-w-6xl mx-auto perspective-distant">
+        <div className="w-full grid grid-cols-1 items-center justify-center relative container max-w-2xs md:max-w-6xl mx-auto perspective-distant">
           {featuresList.map((val, featureIdx) => {
             const pos = order.indexOf(featureIdx);
             const isHovered = hovered === featureIdx;
